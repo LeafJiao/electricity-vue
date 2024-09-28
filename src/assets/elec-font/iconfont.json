@@ -1,0 +1,128 @@
+{
+  "id": "4495242",
+  "name": "electric",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3893261",
+      "name": "联系方式",
+      "font_class": "lianxifangshi",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "5166735",
+      "name": "备注",
+      "font_class": "beizhu",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "8621749",
+      "name": "用户名",
+      "font_class": "yonghuming",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "25447686",
+      "name": "合_57行业分类",
+      "font_class": "he_57hangyefenlei",
+      "unicode": "e719",
+      "unicode_decimal": 59161
+    },
+    {
+      "icon_id": "36925462",
+      "name": "013_公司地址",
+      "font_class": "a-013_gongsidizhi",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "28204934",
+      "name": "交易方式@2x",
+      "font_class": "a-jiaoyifangshi2x",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "11660482",
+      "name": "人数",
+      "font_class": "renshu",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "38271089",
+      "name": "保险类型",
+      "font_class": "baoxianleixing",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    },
+    {
+      "icon_id": "5332771",
+      "name": "日期",
+      "font_class": "riqi",
+      "unicode": "e776",
+      "unicode_decimal": 59254
+    },
+    {
+      "icon_id": "8436313",
+      "name": "电",
+      "font_class": "dian",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "9487330",
+      "name": "历史最低",
+      "font_class": "lishizuidi",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "14065691",
+      "name": "综合最高车速",
+      "font_class": "zonghezuigaochesu",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "22586896",
+      "name": "平均价格",
+      "font_class": "pingjunjiage",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "2172709",
+      "name": "开店盈利测算",
+      "font_class": "kaidianyinglicesuan",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "7519200",
+      "name": "价格",
+      "font_class": "jiage",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "18887285",
+      "name": "emi价格",
+      "font_class": "emijiage",
+      "unicode": "e6fe",
+      "unicode_decimal": 59134
+    },
+    {
+      "icon_id": "29358965",
+      "name": "icon／用电量",
+      "font_class": "a-iconyongdianliang",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    }
+  ]
+}
