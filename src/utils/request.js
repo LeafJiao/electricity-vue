@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // 创建axios实例，进行自定义配置
 const instance = axios.create({
-  baseURL: '',
+  baseURL: 'http://localhost:9999',
   // 请求时间
   timeout: 10000,
   headers: { 'X-Custom-Header': 'foobar' }
@@ -12,6 +12,10 @@ const instance = axios.create({
 instance.interceptors.request.use(
   function (config) {
     // 在发送请求之前做些什么
+    let authorization = sessionStorage.getItem('sessionId')
+    if (authorization) {
+      config.headers.Authorization = authorization
+    }
     return config
   },
   function (error) {

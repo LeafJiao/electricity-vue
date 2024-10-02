@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { getUserList } from '@/api/user.js'
 
 const eleImg = ref([
   new URL('../../assets/eleImage/ele1.jpg', import.meta.url).href,
@@ -69,6 +70,12 @@ const shop = ref([
     price: 0.56
   }
 ])
+
+const getUserId = () => {
+  getUserList().then((res) => {
+    console.log(res.data.data)
+  })
+}
 </script>
 
 <template>
@@ -181,7 +188,11 @@ const shop = ref([
           <span style="font-size: 20px; color: #a1a3b4; margin-left: 20px">
             {{ item.price }}
           </span>
-          <el-button plain type="info" style="margin-left: 20px"
+          <el-button
+            plain
+            type="info"
+            @click="getUserId"
+            style="margin-left: 20px"
             >查看</el-button
           >
         </div>

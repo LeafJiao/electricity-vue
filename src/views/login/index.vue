@@ -3,15 +3,35 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import FontEcharts from '@/components/FontEcharts.vue'
 import { ElMessage } from 'element-plus'
+import { register, login } from '@/api/login.js'
+
 const router = useRouter()
-const username = ref('')
+
+const phone = ref('')
 const password = ref('')
-const login = () => {
-  if (username.value == 'user' && password.value == 'user') {
-    router.push('/index/home')
-  } else {
-    ElMessage.error('账号或密码错误')
-  }
+
+const registerUser = () => {
+  const data = { phone: phone.value, password: password.value }
+  register(data).then((res) => {
+    if (res.data.code === 200) {
+      ElMessage.success('注册成功')
+    } else {
+      ElMessage.error(res.data.msg)
+    }
+  })
+}
+
+const loginUser = () => {
+  const data = { phone: phone.value, password: password.value }
+  login(data).then((res) => {
+    if (res.data.code === 200) {
+      sessionStorage.setItem('sessionId', res.data.data.token)
+      ElMessage.success('登录成功')
+      router.push('/index/home')
+    } else {
+      ElMessage.error('账号或密码错误')
+    }
+  })
 }
 </script>
 
@@ -37,7 +57,7 @@ const login = () => {
       >
         <span>账号:</span>
         <el-input
-          v-model="username"
+          v-model="phone"
           placeholder="参考账号 'user'"
           style="width: 250px; height: 40px; margin-left: 10px; border: none"
         />
@@ -62,7 +82,7 @@ const login = () => {
       </div>
       <el-button
         type="primary"
-        @click="login"
+        @click="loginUser"
         style="
           position: absolute;
           top: 460px;
